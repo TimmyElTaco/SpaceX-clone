@@ -1,0 +1,13 @@
+---
+const {title, subtitle = 'RECENT LAUNCH', btnText = 'REWATCH'} = Astro.props
+---
+
+<section class="w-full h-screen flex flex-col overflow-hidden">
+    
+    <header class="flex flex-col justify-end items-start w-full h-full py-[120px] px-[95px]">
+        <h3 class="text-gray-200 text-xl font-D-DIN-Light font-normal">{subtitle}</h3>
+        <h2 class="text-white w-[500px] text-balance text-5xl font-D-DIN-Bold pb-7 pt-1">{title}</h2>
+        <button class="text-sm relative h-[50px] w-40 overflow-hidden border border-white text-white transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-0 before:w-full before:bg-white before:transition-all before:duration-200 hover:text-black hover:before:left-0 hover:before:h-full"><span class="relative z-10">{btnText}</span></button>
+    </header>
+    <slot name="background" />
+</section>
