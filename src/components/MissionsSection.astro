@@ -5,14 +5,36 @@ const {title, subtitle = 'RECENT LAUNCH', btnText = 'REWATCH'} = Astro.props
 <section class="w-full h-screen flex flex-col overflow-hidden">
     
     <header class="flex flex-col justify-end items-start w-full h-full py-[120px] px-[95px]">
-        <h3 class="text-gray-200 text-xl font-D-DIN-Light font-normal">{subtitle}</h3>
-        <h2 class="text-white w-[500px] text-balance text-5xl font-D-DIN-Bold pb-7 pt-1">{title}</h2>
+        <h3 class="text-gray-200 text-xl font-D-DIN-Light font-normal delay-0 animated opacity-0">{subtitle}</h3>
+        <h2 class="text-white w-[500px] text-balance text-5xl font-D-DIN-Bold pb-7 pt-1 animate-delay-150 animated opacity-0">{title}</h2>
         <button class="text-sm relative h-[50px] w-40 overflow-hidden border border-white text-white z-[1] transition-all hover:text-black 
             before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:origin-top-right before:transition-transform before:duration-[250ms] before:ease-in-out before:scale-y-0 before:-z-[1]
             hover:before:origin-bottom-right hover:before:transition-transform hover:before:duration-[250ms] hover:before:ease-out hover:before:scale-y-100
+            animate-delay-300 animated opacity-0
         ">
             <span class="relative z-10">{btnText}</span>
         </button>
     </header>
     <slot name="background" />
 </section>
+
+<script>
+
+    const animated = document.querySelectorAll('.animated');
+
+    animated.forEach( element => {
+
+        const observer = new IntersectionObserver( (e) => {
+            const intersecting = e[0].isIntersecting;
+
+            if(intersecting) {
+                element.classList.add('animate-fade-up');
+                element.classList.replace('opacity-0', 'opacity-100');
+            }
+        } );
+
+        observer.observe(element);
+
+    } );
+
+</script>
