@@ -14,7 +14,7 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/x-ico" href="/public/favicon.ico" />
+		<link rel="icon" type="image/x-ico" href="/public/static/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
@@ -29,7 +29,7 @@ const { title } = Astro.props;
 <style is:global>
 	@font-face {
 		font-family: D-DIN-Medium;
-		src: url(fonts/D-DIN.woff2) format("woff2"),url(fonts/D-DIN.woff) format("woff"),url(fonts/D-DIN.otf) format("opentype");
+		src: url(static/fonts/D-DIN.woff2) format("woff2"),url(fonts/D-DIN.woff) format("woff"),url(fonts/D-DIN.otf) format("opentype");
 		font-style: normal;
 		font-weight: 400;
 		font-display: block
@@ -37,7 +37,7 @@ const { title } = Astro.props;
 
 	@font-face {
 		font-family: D-DIN-Light;
-		src: url(fonts/D-DIN.woff2) format("woff2"),url(fonts/D-DIN.woff) format("woff"),url(fonts/D-DIN.otf) format("opentype");
+		src: url(static/fonts/D-DIN.woff2) format("woff2"),url(fonts/D-DIN.woff) format("woff"),url(fonts/D-DIN.otf) format("opentype");
 		font-style: normal;
 		font-weight: 400;
 		font-display: block
@@ -45,7 +45,7 @@ const { title } = Astro.props;
 
 	@font-face {
 		font-family: D-DIN-Bold;
-		src: url(fonts/D-DIN-Bold.woff2) format("woff2"),url(fonts/D-DIN-Bold.woff) format("woff"),url(fonts/D-DIN-Bold.otf) format("opentype");
+		src: url(static/fonts/D-DIN-Bold.woff2) format("woff2"),url(fonts/D-DIN-Bold.woff) format("woff"),url(fonts/D-DIN-Bold.otf) format("opentype");
 		font-style: normal;
 		font-weight: 400;
 		font-display: block
@@ -53,7 +53,7 @@ const { title } = Astro.props;
 
 	@font-face {
 		font-family: D-DIN-Regular;
-		src: url(fonts/D-DIN.woff2) format("woff2"),url(fonts/D-DIN.woff) format("woff"),url(fonts/D-DIN.otf) format("opentype");
+		src: url(static/fonts/D-DIN.woff2) format("woff2"),url(fonts/D-DIN.woff) format("woff"),url(fonts/D-DIN.otf) format("opentype");
 		font-style: normal;
 		font-weight: 400;
 		font-display: block
