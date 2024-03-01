@@ -1,54 +1,13 @@
-# Astro Starter Kit: Basics
+# SpaceX Clone with Astro
+This project is created with Astro, I use it because I want to improve the load of the page leaving all the unnecesary JavaScript and use the dinamic pages to genereate the call to the API.
 
-```sh
-npm create astro@latest -- --template basics
-```
+## API
+I was using the SpaceX unofficial API [SpaceX API]([https://pages.github.com/](https://github.com/r-spacex/SpaceX-API/tree/master/docs#rspacex-api-docs)https://github.com/r-spacex/SpaceX-API/tree/master/docs#rspacex-api-docs) From this API I recover the rockets and give each rocket a single page with a fetch that create dinamic pages.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Styles
+In the styles I use Tailwind, to clone almost pixel perfect the landing of SpaceX official website, and create the responsive for the website, I also include the library Tailwind animated for the animations in the page that I find so useful to create animated elements in a ease way.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Fork repository
+My project is build using **pnpm** but you can use wherever package manager that you want, you just have to delete the pnpm lock and install the package with the command of your package manager, I recommend pnpm because is more light beacuse reuses the installation of libraries.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+[Link to the page](https://space-x-clone-psi.vercel.app/)
